@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+/** HEADER **/
+nav {
+	padding: 5px;
+	border-bottom: 2px solid grey;
+}
+
+.nav-switch-button {
+	/*border: 1px solid green;*/
+	/*margin-right: 0;*/
+	margin-left: auto;
+	width: 10%;
+	padding: 5px;
+}
+
+[name^="shadow-"] {
+    display: none;
+}
+
+[name^="shadow-"] + .button {
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-size: .8em;
+    padding: 1% 10%;
+}
+/* END HEADER */
+
+/* CATALOG PAGE */
+.catalog-content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: #f5f7f4;
+	height: 100%;
+}
+
+.root-catalog {
+	/*margin: 0 auto;	*/
+	padding: 1% .5%;
+	text-align: center;
+}
+
+.card-cat {
+	/*display: inline-block;*/
+	/*width: 100%;
+	height: 200px;
+	margin-bottom: 10px;*/
+	/*border: 1px solid grey;*/
+	
+	padding: 6px;
+}
+
+.card-cat-content {
+	width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+}
+
+
+
+
+/* End CATALOG Page */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.card-cat {
+		width: 22%;
+		height: 500px;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.card-cat {
+		width: 28%;
+		height: 500px;
+		padding: 1% 1.5%;
+	}
+ }
+
+ ********* Small devices only *********
+@media (min-width: 480px) and (max-width: 991px) {
+	.card-cat {
+		width: 45%;
+		height: 500px;
+		padding: 2%;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 479px) {
+	.card-cat {
+		width: 80%;
+		height: 500px;
+		padding: 2%;
+	}
+}
