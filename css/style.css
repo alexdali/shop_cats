@@ -18,27 +18,63 @@ body {
 /** HEADER **/
 nav {
 	padding: 5px;
+	margin-top: 10px;
 	border-bottom: 2px solid grey;
 }
 
+.logo-brand {
+	display: inline-block;
+	width: 9em;
+	padding: 0;
+	margin-left: 0;
+	/*margin-right: 1%;*/
+	/*margin-bottom: 5px;*/
+	/*border: 1px solid orange;*/
+	text-align: center;
+	font-size: 1.5em;
+}
+
 .nav-switch-button {
-	/*flex: justify;*/
-	/*border: 1px solid green;*/
-	/*margin-right: 0;*/
+	display: inline-block;
+	margin-right: 1%;
 	border: 1px solid grey;
 	border-radius: 5px;
-	margin-left: auto;
+	/*margin-right: auto;*/
+	margin-left: 73.5%;
 	width: 5%;
-	padding: 3px 1px 1px;
+	padding: 2px 1px 0;
 	text-align: center;
-
 }
 .nav-switch-button > span {
 	display: block;
 }
+.cart > i {
+	/*font-size: 1.3em;*/
+	vertical-align: middle;
+}
+
+/* END HEADER */
+
+/* CATALOG PAGE */
+.catalog-content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: #f5f7f4;
+	height: 100%;
+}
+
+h2 {
+	display: inline-block;
+	margin-left: 0;
+}
+
+.desc-btn {
+	display: inline-block;
+	margin-left: 75%;
+}
 
 [name^="shadow-"] {
-    /*display: none;*/
+    display: none;
 }
 
 [name^="shadow-"] ~ .button > .material-icons {
@@ -50,6 +86,11 @@ nav {
     /*box-shadow: 2px solid #000;*/
 }
 
+.button > i {
+	font-size: 1.3em;
+	vertical-align: middle;
+}
+
 [name^="shadow-"]:checked ~ .button.tile .material-icons{
     display: none;
 }
@@ -57,14 +98,16 @@ nav {
 [name^="shadow-"]:not(:checked) ~ .button.list .material-icons {
     display: none;
 }
-/* END HEADER */
 
-/* CATALOG PAGE */
-.catalog-content {
-	margin-top: 5px;
-	width: 100%;
-	background-color: #f5f7f4;
-	height: 100%;
+.catalog-content hr {
+	/*border: 0; 
+	height: 0; 
+	border-top: 1px solid rgba(0, 0, 0, 0.1); 
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+
+	height: 12px; 
+	border: 0; 
+	box-shadow: inset 0 12px 12px -12px rgba(201, 200, 200);	
 }
 
 .root-catalog {
