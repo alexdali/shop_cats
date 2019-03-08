@@ -116,7 +116,7 @@ h2 {
 	text-align: center;
 }
 
-.card-cat {
+.card-unit {
 	display: inline-block;
 	/*width: 100%;*/
 	height: 500px;
@@ -124,14 +124,14 @@ h2 {
 	/*padding: 6px;*/
 }
 
-[name^="shadow-"]:checked + .key1 ~ .root-catalog > .card-cat {
+[name^="shadow-"]:checked + .key1 ~ .root-catalog > .card-unit {
 	width: 100%;
 	height: 200px;
 	margin-bottom: 10px;
 	padding: 6px;
 }
 
-/*.root-catalog > .card-cat {	
+/*.root-catalog > .card-unit {	
 	width: 100%;
 	height: 200px;
 	margin-bottom: 10px;
@@ -140,18 +140,99 @@ h2 {
 /*display: inline-block;*/
 /*border: 1px solid grey;*/
 
-.card-cat > ul {
+.card-unit > ul {
 	width: 100%;
 	height: 100%;
 	border: 1px solid blue;
 	/*padding: 6px;*/
 }
 
-/*.card-cat-content {
+/*.card-unit-content {
 	width: 100%;
 	height: 100%;
 	border: 1px solid blue;
 }*/
+
+.card-unit-content {
+	/*width: 100%;
+	height: 100%;*/
+	/*border: 1px solid blue;*/
+	/*vertical-align: */
+	text-align: left;
+}
+
+.card-unit-img {
+	/*border: 1px solid red;*/
+	/*height: 250px;*/
+	/*margin-top: 20%;
+	margin-bottom: 0;*/
+	line-height: 250px; /* or whatever you want, should match height */
+  	/*text-align: end;*/
+}
+
+.card-unit-img > img {
+	width: 100%;
+	/*margin-top: 35%;
+	margin-bottom: 0;*/
+	vertical-align: bottom;
+}
+
+.card-unit-name {
+	width: 95%;
+	font-size: 1.4em;
+	/*font-stretch: 2em;*/
+	letter-spacing: .08em;
+	/*height: 1em;*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*margin-left: 0;*/
+	padding: 4% 2% 2%;
+}
+
+.card-unit-category {
+	width: 100%;
+	font-size: .8em;
+	white-space: nowrap;
+	/*margin-left: 0;*/
+	padding: 1% 2% 1%;	
+}
+
+.card-unit-rating {
+	width: 90%;
+	padding: 2% 2%;	
+}
+
+.card-unit-rating-wrapper .unit-rating {
+	display: inline-block;
+	width: 8%;
+	/*margin-right: 0;*/
+}
+
+.card-unit-price {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: red;
+	padding: .5% 2% 2%;		
+}
+
+.card-unit-descript + p {
+	width: 95%;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.card-unit-descript {
+	width: 95%;
+	height: 125px;
+	font-size: .7em;
+	line-height: 1.3em;
+	/*white-space: wrap;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: .5% 2%;
+	/*border: 1px solid green;*/
+}
 
 
 
@@ -161,7 +242,7 @@ h2 {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-	.card-cat {
+	.card-unit {
 		width: 22%;
 		height: 500px;
 		padding: 1% 1%;
@@ -170,7 +251,7 @@ h2 {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-	.card-cat {
+	.card-unit {
 		width: 28%;
 		height: 500px;
 		padding: 1% 1.5%;
@@ -179,7 +260,7 @@ h2 {
 
  /********* Small devices only *********/
 @media (min-width: 768px) and (max-width: 991px) {
-	.card-cat {
+	.card-unit {
 		width: 40%;
 		height: 500px;
 		padding: 1%;
@@ -188,7 +269,7 @@ h2 {
 
 /********* Small devices only *********/
 @media (min-width: 600px) and (max-width: 767px) {
-	.card-cat {
+	.card-unit {
 		width: 55%;
 		height: 500px;
 		padding: 1%;
@@ -197,7 +278,7 @@ h2 {
 
 /********** Extra small devices only **********/
 @media (max-width: 599px) {
-	.card-cat {
+	.card-unit {
 		width: 80%;
 		height: 500px;
 		padding: 2%;
