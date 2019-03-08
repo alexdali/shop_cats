@@ -156,12 +156,13 @@ h2 {
 .card-unit-content {
 	/*width: 100%;
 	height: 100%;*/
-	/*border: 1px solid blue;*/
+	border: 1px solid blue;
 	line-height: 140%;
 	vertical-align: middle;
 	text-align: left;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	/*padding-bottom: 1%;*/
 }
 
 .card-unit-img {
@@ -190,7 +191,7 @@ h2 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	/*margin-left: 0;*/
-	padding: 4% 2% 2%;
+	padding: 4% 2% 1%;
 }
 
 .card-unit-category {
@@ -198,12 +199,13 @@ h2 {
 	font-size: .8em;
 	white-space: nowrap;
 	/*margin-left: 0;*/
-	padding: 1% 2% 1%;	
+	padding: 0 2% 1%;	
 }
 
 .card-unit-rating {
 	width: 90%;
-	padding: 2% 2%;	
+	padding: 0 2% 2%;
+	color: orange;
 }
 
 .card-unit-rating-wrapper .unit-rating {
@@ -234,7 +236,7 @@ h2 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: .5% 2%;
-	border: 1px solid orange;
+	/*border: 1px solid orange;*/
 }
 
 
