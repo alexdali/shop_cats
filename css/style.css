@@ -124,6 +124,10 @@ h2 {
 	/*padding: 6px;*/
 }
 
+.card-unit:hover .card-unit-img {
+	opacity: .7;
+}
+
 [name^="shadow-"]:checked ~ .root-catalog > .card-unit {
 	width: 100%;
 	height: 200px;
@@ -209,6 +213,10 @@ h2 {
 	vertical-align: bottom;
 }
 
+.card-unit-img > img:hover {
+	opacity: .7;
+}
+
 [name^="shadow-"]:checked ~ .root-catalog .card-unit-content-li > .card-unit-img > img {
 	/*width: 100%;*/
 	/*height: 18em;*/
@@ -245,6 +253,11 @@ h2 {
 	/*margin-left: 0;*/
 	padding: 0 2% 1%;	
 }
+
+.card-unit-name > a:hover, .card-unit-category > a:hover {
+    /*background: #786b59;*/
+    color: red; 
+   } 
 
 .card-unit-rating {
 	width: 90%;
