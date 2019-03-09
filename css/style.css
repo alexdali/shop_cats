@@ -27,9 +27,6 @@ nav {
 	width: 9em;
 	padding: 0;
 	margin-left: 0;
-	/*margin-right: 1%;*/
-	/*margin-bottom: 5px;*/
-	/*border: 1px solid orange;*/
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -39,7 +36,6 @@ nav {
 	margin-right: 1%;
 	border: 1px solid grey;
 	border-radius: 5px;
-	/*margin-right: auto;*/
 	margin-left: 73.5%;
 	width: 5%;
 	padding: 2px 1px 0;
@@ -49,7 +45,6 @@ nav {
 	display: block;
 }
 .cart > i {
-	/*font-size: 1.3em;*/
 	vertical-align: middle;
 }
 
@@ -78,12 +73,7 @@ h2 {
 }
 
 [name^="shadow-"] ~ .button > .material-icons {
-    /*width: 70%;*/
-    /*border: 2px solid grey;*/
-    /*border-radius: 3px;*/
     font-size: 2em;
-    /*padding: 1% 10%;*/
-    /*box-shadow: 2px solid #000;*/
 }
 
 .button > i {
@@ -100,32 +90,18 @@ h2 {
 }
 
 .catalog-content hr {
-	/*border: 0; 
-	height: 0; 
-	border-top: 1px solid rgba(0, 0, 0, 0.1); 
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
-
 	height: 12px; 
 	border: 0; 
 	box-shadow: inset 0 12px 12px -12px rgba(201, 200, 200);	
 }
 
 .root-catalog {
-	/*margin: 0 auto;	*/
 	padding: 1% .5%;
 	text-align: center;
 }
 
 .card-unit {
 	display: inline-block;
-	/*width: 100%;*/
-	/*height: 500px;*/
-	/*margin-bottom: 10px;*/
-	/*padding: 6px;*/
-}
-
-.card-unit:hover .card-unit-img {
-	opacity: .7;
 }
 
 [name^="shadow-"]:checked ~ .root-catalog > .card-unit {
@@ -139,105 +115,54 @@ h2 {
 	display: inline-block;
 	width: 30%;
 	height: 200px;
-	/*margin-bottom: 10px;*/
 	padding: .5% 1% 0;
 	text-align: left;
 	vertical-align: middle;
 }
 
-
-
-/*.root-catalog > .card-unit {	
-	width: 100%;
-	height: 200px;
-	margin-bottom: 10px;
-	padding: 6px;
-}*/
-/*display: inline-block;*/
-/*border: 1px solid grey;*/
-
 .card-unit > ul {
 	width: 100%;
 	height: 100%;
-	/*border: 1px solid blue;*/
-	/*padding: 6px;*/
 }
 
-/*.card-unit-content {
-	width: 100%;
-	height: 100%;
-	border: 1px solid blue;
-}*/
-
 .card-unit-content {
-	/*width: 100%;
-	height: 100%;*/
 	border: 1px solid blue;
 	line-height: 140%;
-	/**vertical-align: middle;*/
 	text-align: left;
 	overflow: hidden;
-	/*text-overflow: ellipsis;*/
-	/*padding-bottom: 1%;*/
 }
 
 .card-unit-img {
-	/*border: 1px solid red;*/
-	/*height: 250px;*/
-	/*margin-top: 20%;
-	margin-bottom: 0;*/
 	line-height: 257px;
-  	/**text-align: center;*/
 }
 
 [name^="shadow-"]:checked ~ .root-catalog .card-unit-content-li > .card-unit-img {
-	/*width: 100%;*/
-	/*height: 18em;*/
-	/*height: auto;*/
 	line-height: 0;
-	/*max-height: 200px;*/
-	/*object-fit: contain;*/
-	/*margin-top: 35%;
-	margin-bottom: 0;*/
-	/*vertical-align: bottom;*/
 }
 
 .card-unit-img > img {
 	width: 100%;
-	/*height: 18em;*/
 	height: auto;
 	max-height: 255px;
 	object-fit: contain;
-	/*margin-top: 35%;
-	margin-bottom: 0;*/
 	vertical-align: bottom;
 }
 
-.card-unit-img > img:hover {
+.card-unit:hover .card-unit-img > img, .card-unit-img > img:hover {
 	opacity: .7;
 }
 
 [name^="shadow-"]:checked ~ .root-catalog .card-unit-content-li > .card-unit-img > img {
-	/*width: 100%;*/
-	/*height: 18em;*/
-	/*height: auto;*/
 	max-height: 200px;
-	/*object-fit: contain;*/
-	/*margin-top: 35%;
-	margin-bottom: 0;*/
-	/*vertical-align: bottom;*/
 }
 
 .card-unit-name {
 	width: 95%;
 	font-size: 1.4em;
-	/*font-stretch: 2em;*/
 	letter-spacing: .08em;
-	/*height: 1em;*/
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	/*margin-left: 0;*/
 	padding: 4% 2% 1%;
 }
 
@@ -250,12 +175,10 @@ h2 {
 	font-size: .8em;
 	white-space: nowrap;
 	overflow: hidden;
-	/*margin-left: 0;*/
 	padding: 0 2% 1%;	
 }
 
 .card-unit-name > a:hover, .card-unit-category > a:hover {
-    /*background: #786b59;*/
     color: red; 
    } 
 
@@ -268,7 +191,6 @@ h2 {
 .card-unit-rating-wrapper .unit-rating {
 	display: inline-block;
 	width: 8%;
-	/*margin-right: 0;*/
 }
 
 .card-unit-price {
@@ -289,11 +211,14 @@ h2 {
 	height: 10em;
 	font-size: .7em;
 	line-height: 1.3em;
-	/*white-space: wrap;*/
-	/*overflow: hidden;
-	text-overflow: ellipsis;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
 	padding: .5% 2%;
-	/*border: 1px solid orange;*/
+}
+
+[name^="shadow-"]:checked ~ .root-catalog .card-unit-content-li .card-unit-descript {
+	height: 100%;
+	max-height: 180px;
 }
 
 
